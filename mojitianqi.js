@@ -1,14 +1,3 @@
-/*************************************
-项目名称：墨迹天气
-
-[rewrite_local]
-^https?:\/\/.*\.api\.moji\.com\/(sns\/json\/profile\/get_info_.+|json\/member_new\/homepage_info.+|user\/personal\/json\/profile_.+|flycard\/novice|shortvideo\/.+) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/mojitianqi.js
-
-[mitm]
-hostname = *.api.moji.com
-
-*************************************/
-
 
 var chxm1023 = JSON.parse($response.body);
 const vip1 = '/sns/json/profile/get_info';
